@@ -1,0 +1,27 @@
+{  
+   "features":[  
+      {  
+         "type":"Feature",
+         "crs":{  
+            "type":"name",
+            "properties":{  
+               "name":"EPSG:4326"
+            }
+         },
+         "geometry":{  
+            "type":"Point",
+            "coordinates":[  
+               9.380000114440918,
+               42.970001220703125
+            ]
+         },
+         "properties":{  
+            "color":"#ED2D46",
+            "name":"Ersa windmill farm",
+            "icon":"",
+            "font":"onlinewebfonts"
+         }
+      }
+   ],
+   "type":"FeatureCollection"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "map-component",
+  "version": "1.0.0",
+  "description": "Ce composant permets d'afficher un fond de carte Openlayers 3 sur lequel seront ajout�es des zones g�ographiques provenant d'un flux GeoJson.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gregory Klein",
+  "license": "ISC"
+}
