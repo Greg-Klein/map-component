@@ -6,8 +6,24 @@
 
 <dom-module id="map-component">
 
-  <style>:host{display:block;position:relative;background-color:#fff}.custom-mouse-position{position:absolute;left:0;bottom:0;padding:5px;font-family:'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;font-weight:bold;font-size:12px;background-color:rgba(255,255,255,0.5)}
-</style>
+  <style>
+    :host {
+      display: block;
+      position: relative;
+      background-color: #fff;
+    }
+
+    .custom-mouse-position {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      padding: 5px;
+      font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+      font-weight: bold;
+      font-size: 12px;
+      background-color: rgba(255,255,255,0.5);
+    }
+  </style>
 
   <template>
     <div class="map-container">
@@ -37,10 +53,9 @@
       },
 
       attached: function() {
-
         this.defaultCenter = ol.proj.transform([Number(this.defaultCenterLong), Number(this.defaultCenterLat)], 'EPSG:4326', 'EPSG:3857');
 
-
+        var mapElement = this.$.map;
         var _this = this;
         var mapSource;
         if(this._map) return;
@@ -97,7 +112,7 @@
 
         this._map = new ol.Map({
           layers: [raster, this._vector],
-          target: this.$.map,
+          target: mapElement,
           controls: ol.control.defaults({
             attributionOptions: /** @type {olx.control.AttributionOptions} */
               ({
@@ -111,7 +126,7 @@
           })
         });
 
-        var mapViewport = this.$.map.querySelector('.ol-viewport');
+        var mapViewport = mapElement.querySelector('.ol-viewport');
         mapViewport.style.opacity = 0;
 
         raster.getSource().on('tileloadend', function() {

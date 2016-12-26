@@ -18,8 +18,12 @@
          "properties":{  
             "color":"#ED2D46",
             "name":"Ersa windmill farm",
-            "icon":"",
-            "font":"onlinewebfonts"
+            "icon":"\uf041",
+            "font":"FontAwesome",
+            "description": "Ceci est la description",
+            "url": "http://et/voici/un/lien",
+            "prop1": "Propriété 1",
+            "prop2": "Propriété 2"
          }
       }
    ],
