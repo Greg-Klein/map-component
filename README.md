@@ -1,5 +1,8 @@
 #Documentation Map-Component
 
+###Exemple
+[Cliquez ici](https://greg-klein.github.io/map-component/) pour voir un exemple d'utilisation du composant.
+
 ###Description
 Ce composant permets d'afficher un fond de carte Openlayers 3 sur lequel seront ajoutées des zones géographiques provenant d'un flux GeoJson.
 
