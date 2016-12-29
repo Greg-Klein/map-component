@@ -4,26 +4,27 @@
 [Cliquez ici](https://greg-klein.github.io/map-component/) pour voir un exemple d'utilisation du composant.
 
 ###Description
-Ce composant permets d'afficher un fond de carte Openlayers 3 sur lequel seront ajoutées des zones géographiques provenant d'un flux GeoJson.
+Ce composant permets d'afficher un fond de carte Openlayers 3 sur lequel seront ajoutÃ©es des zones gÃ©ographiques provenant d'un flux GeoJson.
 
 ---
 ###Attributs
 
-| Nom | Type | Description | Facultatif | Valeur par défaut |
+| Nom | Type | Description | Facultatif | Valeur par dÃ©faut |
 |-----|------|-------------|------------|-------------------|
 | geojson-service | String | Url du service fournissant le GeoJson | Non |
-| map-service | String | Url du service de carte (ex: mapbox, bing, …) | Oui |
-| zoom | Boolean | Si présent, zoom directement sur les points/zones lors du chargement de la map | Oui | Non présent / false |
-| show-coords | Boolean | Si présent, affiche les coordonnées du curseur | Oui | false |
-| default-zoom | Number | Définit le zoom par défaut si l'attribut **zoom** n'est pas présent | Oui | 2 |
-| default-center-long | Number | Définit la longitude du centre de la map si l'attribut **zoom** n'est pas présent | Oui | 0 |
-| default-center-lat | Number | Définit la latitude du centre de la map si l'attribut **zoom** n'est pas présent | Oui | 0 |
+| map-service | String | Url du service de carte (ex: mapbox, bing, ...) | Oui |
+| zoom | Boolean | Si prÃ©sent, zoom directement sur les points/zones lors du chargement de la map | Oui | Non prÃ©sent / false |
+| show-coords | Boolean | Si prÃ©sent, affiche les coordonnÃ©es du curseur | Oui | false |
+| default-zoom | Number | DÃ©finit le zoom par dÃ©faut si l'attribut **zoom** n'est pas prÃ©sent | Oui | 2 |
+| default-center-long | Number | DÃ©finit la longitude du centre de la map si l'attribut **zoom** n'est pas prÃ©sent | Oui | 0 |
+| default-center-lat | Number | DÃ©finit la latitude du centre de la map si l'attribut **zoom** n'est pas prÃ©sent | Oui | 0 |
+| marker-default-color | String | DÃ©finit la couleur par dÃ©faut des Ã©lÃ©ments Ã  afficher sur la carte (Doit Ãªtre une couleur au format CSS: 'green', '#00FF00', '#0F0' ou 'rgb(0, 255, 0)') | Oui | red |
 
 
 ---
 ###Utilisation
 
-Le composant s'insère dans une page de cette manière:
+Le composant s'insÃ¨re dans une page de cette maniÃ¨re:
 
 ```html
 <map-component geojson-service="http://url/du/service" {...attributs...}></map-component>
