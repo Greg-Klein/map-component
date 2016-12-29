@@ -268,8 +268,10 @@
 
             content += props.url ? '<p><a href="' + props.url + '" target="_blank" style="color:#009FDE">' + props.urlLabel + '</a></p>' : '';
 
+            var title = props.name || '&nbsp;';
+
             swal({
-              title: props.name,
+              title: title,
               text: content,
               allowOutsideClick: true,
               showConfirmButton: false,
