@@ -197,6 +197,21 @@
           })
         })];
 
+        styles.GeometryCollection = [new ol.style.Style({
+          stroke: new ol.style.Stroke({
+            color: color,
+            width: 1
+          }),
+          text: new ol.style.Text({
+            font: 'normal 24px ' + font,
+            text: icon,
+            textBaseline: 'Bottom',
+            fill: new ol.style.Fill({
+              color: color
+            })
+          })
+        })];
+
         return styles;
       },
 
