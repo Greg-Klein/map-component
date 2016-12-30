@@ -254,6 +254,9 @@
             var hiddenProps = ['geometry', 'color', 'icon', 'font', 'name', 'description', 'url', 'urlLabel'];
 
             var props = feature.getProperties();
+
+            this.fire('featureClicked', props.ins_dats_id);
+
             props.urlLabel = props.urlLabel || 'More...';
             var content = props.description ? '<p>' + props.description + '</p>' : '';
             content += '<ul style="display:inline-block;text-align:left">';
