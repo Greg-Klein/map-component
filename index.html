@@ -9,5 +9,11 @@
   </head>
   <body>
     <map-component geojson-service="flux.json" zoom show-coords></map-component>
+
+    <script>
+      document.addEventListener('featureClicked', function(e) {
+        console.log(e.detail);
+      })
+    </script>
   </body>
 </html>
