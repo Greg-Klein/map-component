@@ -29,3 +29,6 @@ Le composant s'insère dans une page de cette manière:
 ```html
 <map-component geojson-service="http://url/du/service" {...attributs...}></map-component>
 ```
+
+> Il est possible de passer des paramètres qui s'afficheront dans la boite modale. Pour cela, il suffit de les ajouter dans l'objet "properties" du flux GeoJson.
+> Si vous ne souhaitez pas que ces paramètres s'affichent il suffit de faire débuter leur nom par le caractère "_".

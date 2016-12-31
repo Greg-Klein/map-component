@@ -262,7 +262,7 @@
             content += '<ul style="display:inline-block;text-align:left">';
 
             for (key in props) {
-              if(hiddenProps.indexOf(key) < 0) {
+              if(hiddenProps.indexOf(key) < 0 && !key.startsWith('_')) {
                 content += '<li>' + key + ': ' + props[key] + '</li>'
               }
             }
