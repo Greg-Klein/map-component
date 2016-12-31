@@ -24,7 +24,8 @@
             "url": "http://et/voici/un/lien",
             "prop1": "Propriété 1",
             "prop2": "Propriété 2",
-            "ins_dats_id": "123"
+            "ins_dats_id": "123",
+            "_test": "Ne doit pas apparaître"
          }
       }
    ],
